@@ -61,7 +61,7 @@ const CTA = () => {
 
                     <AnimationContainer animation="fadeUp" delay={0.5}>
                         <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-lg mx-auto mt-4">
-                            Sign up for a free trial and see how PropEase can help you manage your properties.
+                            Sign up for a free trial and see how Esencia Code can help you manage your properties.
                         </p>
                     </AnimationContainer>
 

@@ -4,18 +4,16 @@ import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "@/constants";
 import { useClickOutside } from "@/hooks";
 import { cn } from "@/lib";
-import { useClerk } from "@clerk/nextjs";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { RefObject, useRef, useState } from "react";
 import AnimationContainer from "./global/animation-container";
 import Icons from "./global/icons";
 import Wrapper from "./global/wrapper";
 
 const Navbar = () => {
-
-    const { user } = useClerk();
 
     const ref = useRef<HTMLDivElement | null>(null);
     const [open, setOpen] = useState(false);
@@ -66,7 +64,7 @@ const Navbar = () => {
                         transition={{ duration: 0.2 }}
                     >
                         <Link href="/" className="flex items-center gap-2">
-                            <Icons.logo className="w-max h-6 -mt-1" />
+                            <Image src="/images/esencia-logo.png" alt="Esencia Logo" width={104} height={104} />
                         </Link>
                     </motion.div>
 
@@ -90,19 +88,11 @@ const Navbar = () => {
 
                     <AnimationContainer animation="fadeLeft" delay={0.1}>
                         <div className="flex items-center gap-x-4">
-                            {user ? (
-                                <Link href="/dashboard">
-                                    <Button>
-                                        Dashboard
-                                    </Button>
-                                </Link>
-                            ) : (
-                                <Link href="/signup">
-                                    <Button size="sm">
-                                        Get started
-                                    </Button>
-                                </Link>
-                            )}
+                            <Link href="/signup">
+                                <Button size="sm">
+                                    Quiero agendar una videollamada
+                                </Button>
+                            </Link>
                         </div>
                     </AnimationContainer>
                 </Wrapper>
@@ -132,7 +122,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between gap-x-4 w-full">
                         <AnimationContainer animation="fadeRight" delay={0.1}>
                             <Link href="/">
-                                <Icons.icon className="w-max h-6" />
+                                <Image src="/esencia-logo.png" alt="Esencia Logo" width={24} height={24} />
                             </Link>
                         </AnimationContainer>
 
@@ -185,38 +175,15 @@ const Navbar = () => {
                                 </AnimationContainer>
                             ))}
                             <AnimationContainer animation="fadeUp" delay={0.5} className="w-full">
-                                {user ? (
-                                    <Link href="/dashboard" className="w-full">
-                                        <Button
-                                            onClick={() => setOpen(false)}
-                                            variant="default"
-                                            className="block md:hidden w-full"
-                                        >
-                                            Dashboard
-                                        </Button>
-                                    </Link>
-                                ) : (
-                                    <>
-                                        <Link href="/signin" className="w-full">
-                                            <Button
-                                                onClick={() => setOpen(false)}
-                                                variant="secondary"
-                                                className="block md:hidden w-full"
-                                            >
-                                                Login
-                                            </Button>
-                                        </Link>
-                                        <Link href="/signup" className="w-full">
-                                            <Button
-                                                onClick={() => setOpen(false)}
-                                                variant="default"
-                                                className="block md:hidden w-full"
-                                            >
-                                                Start for free
-                                            </Button>
-                                        </Link>
-                                    </>
-                                )}
+                                <Link href="/signin" className="w-full">
+                                    <Button
+                                        onClick={() => setOpen(false)}
+                                        variant="outline"
+                                        className="block md:hidden w-full"
+                                    >
+                                        Sign In
+                                    </Button>
+                                </Link>
                             </AnimationContainer>
                         </motion.div>
                     )}

@@ -1,14 +1,14 @@
 export const NAV_LINKS = [
     {
-        name: "Features",
+        name: "Desarrollo Digital",
         link: "#",
     },
     {
-        name: "Pricing",
+        name: "Marketing Digital",
         link: "#",
     },
     {
-        name: "Contact",
+        name: "Contacto",
         link: "#",
     },
 ];

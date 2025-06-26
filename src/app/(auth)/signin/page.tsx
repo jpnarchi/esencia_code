@@ -4,18 +4,12 @@ import Icons from "@/components/global/icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useSignIn } from "@clerk/nextjs";
 import { LoaderIcon } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React, { useState } from 'react';
 import { toast } from "sonner";
 
 const SignInPage = () => {
-
-    const router = useRouter();
-
-    const { isLoaded, signIn, setActive } = useSignIn();
 
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
@@ -23,7 +17,6 @@ const SignInPage = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (!isLoaded) return;
 
         if (!emailAddress || !password) {
             return toast.warning("Please fill in all fields");
@@ -31,39 +24,11 @@ const SignInPage = () => {
 
         setIsLoading(true);
 
-        try {
-            const signInAttempt = await signIn.create({
-                identifier: emailAddress,
-                password,
-                redirectUrl: "/dashboard"
-            });
-
-            if (signInAttempt.status === 'complete') {
-                await setActive({ session: signInAttempt.createdSessionId });
-                router.push('/dashboard');
-            } else {
-                console.error(JSON.stringify(signInAttempt, null, 2));
-                toast.error("Invalid email or password");
-            }
-        } catch (err: any) {
-            console.error(JSON.stringify(err, null, 2));
-            switch (err.errors[0]?.code) {
-                case 'form_identifier_not_found':
-                    toast.error("This email is not registered. Please sign up first.");
-                    break;
-                case 'form_password_incorrect':
-                    toast.error("Incorrect password. Please try again.");
-                    break;
-                case 'too_many_attempts':
-                    toast.error("Too many attempts. Please try again later.");
-                    break;
-                default:
-                    toast.error("An error occurred. Please try again");
-                    break;
-            }
-        } finally {
+        // Simulate loading
+        setTimeout(() => {
+            toast.info("Authentication is not implemented yet");
             setIsLoading(false);
-        }
+        }, 1000);
     };
 
     return (
@@ -102,7 +67,6 @@ const SignInPage = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div id="clerk-captcha"></div>
                 <Button type="submit" disabled={isLoading}>
                     {isLoading ? (
                         <LoaderIcon className="w-4 h-4 animate-spin" />

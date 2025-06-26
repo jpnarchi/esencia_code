@@ -7,6 +7,7 @@ import Perks from "@/components/perks";
 import PlatformMetrics from "@/components/platform-metrics";
 import Pricing from "@/components/pricing";
 import Testimonials from "@/components/testimonials";
+import { MacbookScrollDemo } from "@/components/mackbook-scroll";
 
 const HomePage = () => {
     return (
@@ -16,8 +17,12 @@ const HomePage = () => {
             </section>
 
             <section className="w-full">
-                <Perks />
+                <MacbookScrollDemo />
             </section>
+
+            {/* <section className="w-full">
+                <Perks />
+            </section> */}
 
             <section className="w-full">
                 <HowItWorks />

@@ -51,12 +51,12 @@ const Footer = () => {
                             <div className="flex items-center gap-2">
                                 <Image
                                     src="/icons/icon.svg"
-                                    alt="PropEase"
+                                    alt="Esencia Code"
                                     width={32}
                                     height={32}
                                 />
                                 <span className="text-lg lg:text-xl font-medium">
-                                    PropEase
+                                    Esencia Code
                                 </span>
                             </div>
                             <p className="text-muted-foreground mt-4 text-sm">
@@ -65,7 +65,7 @@ const Footer = () => {
                                 New York, NY 10001
                             </p>
                             <div className="mt-4 text-sm text-muted-foreground">
-                                <p>support@propease.com</p>
+                                <p>support@Esencia Code.com</p>
                                 <p>+1 (123) 456-7890</p>
                             </div>
                             <div className="flex items-center gap-4 mt-6">
@@ -167,7 +167,7 @@ const Footer = () => {
                 <AnimationContainer animation="fadeUp" delay={1}>
                     <div className="mt-16 border-t border-border/40 py-8 flex flex-col md:flex-row items-center justify-center">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} PropEase. All rights reserved.
+                            © {new Date().getFullYear()} Esencia Code. All rights reserved.
                         </p>
                     </div>
                 </AnimationContainer>
