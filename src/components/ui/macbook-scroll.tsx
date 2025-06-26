@@ -90,7 +90,7 @@ export const MacbookScroll = ({
         className="mb-20 text-center text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
         {title || (
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+            Creamos experiencias digitales
           </span>
         )}
       </motion.h2>
