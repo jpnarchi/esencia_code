@@ -19,7 +19,7 @@ const Hero = () => {
     ];
 
     return (
-        <Wrapper className="pt-20 lg:pt-32 relative min-h-screen w-full h-full flex-1">
+        <Wrapper className="flex items-center justify-center min-h-screen w-full h-full pt-32">
             <div className="flex flex-col lg:flex-row w-full h-full lg:gap-16">
                 <div className="flex flex-col items-start gap-10 py-8 w-full">
                     <div className="flex flex-col items-start gap-4">

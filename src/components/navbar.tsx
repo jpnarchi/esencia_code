@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* Desktop */}
             <motion.div
                 animate={{
-                    width: visible ? "40%" : "100%",
+                    width: visible ? "70%" : "100%",
                     y: visible ? 20 : 0,
                 }}
                 transition={{
@@ -50,14 +50,14 @@ const Navbar = () => {
                     damping: 40,
                 }}
                 style={{
-                    minWidth: "800px",
+                    minWidth: visible ? "700px" : "1100px",
                 }}
                 className={cn(
-                    "hidden lg:flex bg-transparent self-start items-center justify-between py-4 rounded-full relative z-[50] mx-auto w-full backdrop-blur",
-                    visible && "bg-background/60 py-2 border border-t-foreground/20 border-b-foreground/10 border-x-foreground/15 w-full"
+                    "hidden lg:flex bg-transparent self-start items-center justify-between py-6 rounded-full relative z-[50] mx-auto w-full backdrop-blur gap-x-8",
+                    visible && "bg-background/60 py-4 border border-t-foreground/20 border-b-foreground/10 border-x-foreground/15 w-full gap-x-10"
                 )}
             >
-                <Wrapper className="flex items-center justify-between lg:px-4">
+                <Wrapper className="flex items-center justify-between lg:px-8 gap-x-8 w-full">
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
