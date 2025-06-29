@@ -38,6 +38,7 @@ interface LidProps {
   rotate: any;
   translate: any;
   src: string;
+  opacity: any;
 }
 
 interface KBtnProps {
@@ -73,26 +74,22 @@ export const MacbookScroll = ({
 
   const scaleX = useTransform(scrollYProgress, [0, 0.3], [1.2, isMobile ? 1 : 1.5]);
   const scaleY = useTransform(scrollYProgress, [0, 0.3], [0.6, isMobile ? 1 : 1.5]);
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
-  const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 600]);
+  const rotate = useTransform(scrollYProgress, [0, 0.2, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const imageOpacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]);
 
   return (
     <div
       ref={ref}
-      className="flex min-h-[200vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start pt-0 [perspective:800px] sm:scale-50 md:scale-100 md:pt-20 bg-[#101010]">
+      className="flex min-h-[100vh] shrink-0 scale-[0.6] transform flex-col items-center justify-start pt-0 [perspective:800px] sm:scale-75 md:scale-100 md:pt-0 bg-[#101010]">
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="mb-20 text-center text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
-        {title || (
-          <span>
-            Creamos experiencias digitales
-          </span>
-        )}
+        className="mb-8 text-center text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
       </motion.h2>
       {/* Lid */}
       <Lid
@@ -100,7 +97,8 @@ export const MacbookScroll = ({
         scaleX={scaleX}
         scaleY={scaleY}
         rotate={rotate}
-        translate={translate} />
+        translate={translate}
+        opacity={imageOpacity} />
       {/* Base area */}
       <div
         className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
@@ -137,7 +135,8 @@ export const Lid = ({
   scaleY,
   rotate,
   translate,
-  src
+  src,
+  opacity
 }: LidProps) => {
   return (
     <div className="relative [perspective:800px]">
@@ -166,6 +165,7 @@ export const Lid = ({
           translateY: translate,
           transformStyle: "preserve-3d",
           transformOrigin: "top",
+          opacity: opacity,
         }}
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2">
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
