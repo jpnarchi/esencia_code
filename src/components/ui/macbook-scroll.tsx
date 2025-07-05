@@ -170,7 +170,7 @@ export const Lid = ({
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2">
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
         <Image
-          src="/images/mac-imagen.png"
+          src="/images/banner.png"
           alt="aceternity logo"
           fill
           className="absolute inset-0 rounded-lg object-cover object-left-top" />
