@@ -35,7 +35,7 @@ const HowItWorks = () => {
                     >
                         <div
                             className={cn(
-                                "flex flex-col items-start gap-4 bg-gradient-to-b rounded-lg lg:rounded-2xl p-4 lg:p-8",
+                                "flex flex-col items-start gap-4 bg-gradient-to-b rounded-lg lg:rounded-2xl p-4 lg:p-8 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20",
                                 index % 2 === 0 ? "from-neutral-900 to-transparent" : "from-transparent to-neutral-900"
                             )}
                         >

@@ -50,7 +50,7 @@ const Footer = () => {
                         <div className="flex flex-col items-start justify-start md:max-w-[300px]">
                             <div className="flex items-center gap-2">
                                 <Image
-                                    src="/images/esencia-logo.png"
+                                    src="/images/logo.png"
                                     alt="Esencia Code"
                                     width={32}
                                     height={32}

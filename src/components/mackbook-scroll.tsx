@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
@@ -31,8 +33,12 @@ export function MacbookScrollDemo() {
 
           <AnimationContainer animation="fadeUp" delay={0.8}>
             <div className="flex flex-col sm:flex-row gap-4 w-full">
-              <Button size="md" className="w-full md:w-auto">
-                Comenzar proyecto
+              <Button 
+                size="md" 
+                className="w-full md:w-auto"
+                onClick={() => window.open("https://wa.me/+525561365494", "_blank")}
+              >
+                Quiero mi página web
               </Button>
               <Button variant="outline" size="md" className="w-full md:w-auto">
                 Ver portafolio

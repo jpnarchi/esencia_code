@@ -5,7 +5,7 @@ export const NAV_LINKS = [
     },
     {
         name: "Marketing Digital",
-        link: "#",
+        link: "/marketing-digital",
     },
     {
         name: "Contacto",

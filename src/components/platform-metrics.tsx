@@ -1,3 +1,5 @@
+"use client";
+
 import { METRICS } from '@/constants';
 import { cn } from "@/lib";
 import NumberFlow from '@number-flow/react';
@@ -31,8 +33,13 @@ const PlatformMetrics = () => {
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.5}>
-                        <Button className="mt-4">
-                            Comienza tu proyecto
+                        <Button 
+                        className="mt-4"
+                        size="md" 
+                        onClick={() => window.open("https://wa.me/+525561365494", "_blank")}
+                        >
+                        Quiero mi página web
+                        
                         </Button>
                     </AnimationContainer>
                 </div>
