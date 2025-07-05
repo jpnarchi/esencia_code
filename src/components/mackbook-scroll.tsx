@@ -11,11 +11,6 @@ export function MacbookScrollDemo() {
       <div className="flex flex-col lg:flex-row w-full h-full lg:gap-16">
         <div className="flex flex-col items-start gap-10 py-8 w-full">
           <div className="flex flex-col items-start gap-4">
-            <AnimationContainer animation="fadeUp" delay={0.2}>
-              <div className="px-3 py-1 text-xs font-medium text-blue-600 bg-blue-600/10 rounded-full">
-                Más de 200 casos de éxito
-              </div>
-            </AnimationContainer>
 
             <AnimationContainer animation="fadeUp" delay={0.4}>
               <h1 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
@@ -42,23 +37,6 @@ export function MacbookScrollDemo() {
               <Button variant="outline" size="md" className="w-full md:w-auto">
                 Ver portafolio
               </Button>
-            </div>
-          </AnimationContainer>
-
-          <AnimationContainer animation="fadeUp" delay={1}>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-sm text-muted-foreground">Diseño moderno y responsive</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span className="text-sm text-muted-foreground">Tecnología de vanguardia</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                <span className="text-sm text-muted-foreground">Optimización SEO avanzada</span>
-              </div>
             </div>
           </AnimationContainer>
         </div>

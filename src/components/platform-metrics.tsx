@@ -13,26 +13,26 @@ const PlatformMetrics = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
                     <AnimationContainer animation="fadeUp" delay={0.2}>
-                        <SectionBadge title="Platform Impact" />
+                        <SectionBadge title="Impacto Digital" />
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.3}>
                         <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
-                            Transforming real estate
+                            Transformando negocios
                             <br />
-                            management globally
+                            con desarrollo web
                         </h2>
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.4}>
                         <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                            Join thousands who trust our platform to streamline operations and grow.
+                            Únete a cientos de empresas que confían en nosotros para crear su presencia digital.
                         </p>
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.5}>
                         <Button className="mt-4">
-                            Start your journey
+                            Comienza tu proyecto
                         </Button>
                     </AnimationContainer>
                 </div>

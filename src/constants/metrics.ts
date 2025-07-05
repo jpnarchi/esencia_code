@@ -1,21 +1,21 @@
 export const METRICS = [
     {
-        number: 25000,
-        label: "Active properties",
+        number: 150,
+        label: "Proyectos completados",
         image: "/icons/metric-one.svg",
         reverse: false
     },
     {
-        number: 250,
-        suffix: "M+",
-        label: "Property value managed",
+        number: 50,
+        suffix: "+",
+        label: "Clientes satisfechos",
         image: "/icons/metric-two.svg",
         reverse: true
     },
     {
-        number: 98,
+        number: 100,
         suffix: "%",
-        label: "Successful transactions",
+        label: "Sitios web responsive",
         image: "/icons/metric-three.svg",
         reverse: false
     }

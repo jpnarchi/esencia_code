@@ -28,17 +28,17 @@ const HomePage = () => {
                 <HowItWorks />
             </section>
 
-            <section className="w-full">
+            {/* <section className="w-full">
                 <Features />
-            </section>
+            </section> */}
 
-            <section className="w-full">
+            {/* <section className="w-full">
                 <Testimonials />
-            </section>
+            </section> */}
 
-            <section className="w-full">
+            {/* <section className="w-full">
                 <Pricing />
-            </section>
+            </section> */}
 
             <section className="w-full">
                 <PlatformMetrics />

@@ -10,18 +10,18 @@ const HowItWorks = () => {
         <Wrapper className="py-20 lg:py-32 relative">
             <div className="flex flex-col items-center text-center gap-4 py-8 w-full">
                 <AnimationContainer animation="fadeUp" delay={0.2}>
-                    <SectionBadge title="How it works" />
+                    <SectionBadge title="Cómo funciona" />
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
                     <h1 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
-                        Three steps to success
+                        Tres pasos hacia el éxito
                     </h1>
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-lg mx-auto">
-                        Our three-step process simplifies real estate transactions and property management.
+                        Nuestro proceso de tres pasos simplifica el desarrollo web y la creación de experiencias digitales.
                     </p>
                 </AnimationContainer>
             </div>
@@ -59,13 +59,23 @@ const HowItWorks = () => {
                                     animation="fadeUp"
                                     delay={0.9 + (index * 0.2)}
                                 >
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        width={1024}
-                                        height={1024}
-                                        className="w-full h-52 object-contain"
-                                    />
+                                    <div className="w-full h-52 flex items-center justify-center">
+                                        {index === 0 && (
+                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                            </svg>
+                                        )}
+                                        {index === 1 && (
+                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" style={{ animationDelay: '1s' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                            </svg>
+                                        )}
+                                        {index === 2 && (
+                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" style={{ animationDelay: '2s' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                            </svg>
+                                        )}
+                                    </div>
                                 </AnimationContainer>
                                 <AnimationContainer
                                     animation="fadeUp"

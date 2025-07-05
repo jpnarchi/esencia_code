@@ -6,18 +6,18 @@ export interface HowItWorksItem {
 
 export const HOW_IT_WORKS: HowItWorksItem[] = [
     {
-        title: "List Your Property",
-        description: "Easily list your property with detailed information, high-quality photos, and competitive pricing in just minutes.",
+        title: "Análisis y Planificación",
+        description: "Analizamos tus necesidades, objetivos y público objetivo para crear una estrategia digital personalizada que impulse tu negocio.",
         image: "/images/hiw-one.svg"
     },
     {
-        title: "Smart Management",
-        description: "Manage listings, track inquiries, and handle transactions from one central dashboard.",
+        title: "Diseño y Desarrollo",
+        description: "Creamos diseños modernos y desarrollamos tu sitio web con las mejores tecnologías, asegurando una experiencia de usuario excepcional.",
         image: "/images/hiw-two.svg"
     },
     {
-        title: "Close Deals Faster",
-        description: "Streamline negotiations and paperwork with our automated systems and expert support for quick, hassle-free closings.",
+        title: "Lanzamiento y Optimización",
+        description: "Desplegamos tu sitio web, optimizamos el rendimiento y te proporcionamos herramientas para mantener y mejorar tu presencia digital.",
         image: "/images/hiw-three.svg"
     }
 ];

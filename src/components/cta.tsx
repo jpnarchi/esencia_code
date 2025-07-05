@@ -10,15 +10,15 @@ import SectionBadge from "./ui/section-badge";
 const HIGHLIGHTS = [
     {
         icon: "/icons/shield.svg",
-        label: "Secure Platform"
+        label: "Plataforma Segura"
     },
     {
         icon: "/icons/clock.svg",
-        label: "Real-time Updates"
+        label: "Desarrollo Rápido"
     },
     {
         icon: "/icons/magicpen.svg",
-        label: "Smart Features"
+        label: "Diseño Moderno"
     }
 ];
 
@@ -50,18 +50,18 @@ const CTA = () => {
 
                 <div className="flex flex-col items-center justify-center w-full z-30">
                     <AnimationContainer animation="fadeUp" delay={0.3}>
-                        <SectionBadge title="Start now" />
+                        <SectionBadge title="Comienza ahora" />
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.4}>
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
-                            Ready to get started?
+                            ¿Listo para crear la página web de tus sueños?
                         </h2>
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.5}>
                         <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-lg mx-auto mt-4">
-                            Sign up for a free trial and see how Esencia Code can help you manage your properties.
+                            Contáctanos y descubre cómo podemos transformar tu visión en una experiencia digital excepcional.
                         </p>
                     </AnimationContainer>
 
@@ -93,12 +93,12 @@ const CTA = () => {
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={1}>
-                        <Link href="/signin">
+                        <a href="https://wa.me/+525561365494" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="mt-6">
-                                Start now
+                                Contactar por WhatsApp
                                 <ArrowRightIcon className="size-4 ml-2" />
                             </Button>
-                        </Link>
+                        </a>
                     </AnimationContainer>
                 </div>
             </div>

@@ -5,24 +5,24 @@ import AnimationContainer from './global/animation-container';
 import Wrapper from "./global/wrapper";
 
 const PRODUCT_LINKS = [
-    { label: "Property Search", href: "#" },
-    { label: "Management Tools", href: "#" },
-    { label: "Virtual Tours", href: "#" },
-    { label: "Market Analytics", href: "#" },
+    { label: "Desarrollo Web", href: "#" },
+    { label: "Diseño UI/UX", href: "#" },
+    { label: "SEO y Marketing", href: "#" },
+    { label: "Mantenimiento", href: "#" },
 ];
 
 const RESOURCES_LINKS = [
-    { label: "Knowledge Base", href: "#" },
-    { label: "Market Reports", href: "#" },
-    { label: "Property Guides", href: "#" },
-    { label: "Success Stories", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Portafolio", href: "#" },
+    { label: "Casos de Éxito", href: "#" },
+    { label: "Tecnologías", href: "#" },
 ];
 
 const COMPANY_LINKS = [
-    { label: "About Us", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+    { label: "Sobre Nosotros", href: "#" },
+    { label: "Contacto", href: "#" },
+    { label: "Política de Privacidad", href: "#" },
+    { label: "Términos de Servicio", href: "#" },
 ];
 
 const SOCIAL_LINKS = [
@@ -50,7 +50,7 @@ const Footer = () => {
                         <div className="flex flex-col items-start justify-start md:max-w-[300px]">
                             <div className="flex items-center gap-2">
                                 <Image
-                                    src="/icons/icon.svg"
+                                    src="/images/esencia-logo.png"
                                     alt="Esencia Code"
                                     width={32}
                                     height={32}
@@ -60,13 +60,11 @@ const Footer = () => {
                                 </span>
                             </div>
                             <p className="text-muted-foreground mt-4 text-sm">
-                                123 Pine Avenue, Suite 500
-                                <br />
-                                New York, NY 10001
+                                Ciudad de México, México
                             </p>
                             <div className="mt-4 text-sm text-muted-foreground">
-                                <p>support@Esencia Code.com</p>
-                                <p>+1 (123) 456-7890</p>
+                                <p>esencia@esenciacode.mx</p>
+                                <p>+52 55 6136 5494</p>
                             </div>
                             <div className="flex items-center gap-4 mt-6">
                                 {SOCIAL_LINKS.map((social, index) => (
@@ -91,7 +89,7 @@ const Footer = () => {
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <AnimationContainer animation="fadeUp" delay={0.5}>
                                 <div>
-                                    <h3 className="text-base font-medium">Product</h3>
+                                    <h3 className="text-base font-medium">Servicios</h3>
                                     <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                         {PRODUCT_LINKS.map((link, index) => (
                                             <AnimationContainer
@@ -115,7 +113,7 @@ const Footer = () => {
 
                             <AnimationContainer animation="fadeUp" delay={0.5}>
                                 <div className="mt-10 md:mt-0">
-                                    <h3 className="text-base font-medium">Resources</h3>
+                                    <h3 className="text-base font-medium">Recursos</h3>
                                     <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                         {RESOURCES_LINKS.map((link, index) => (
                                             <AnimationContainer
@@ -140,7 +138,7 @@ const Footer = () => {
 
                         <AnimationContainer animation="fadeUp" delay={0.5}>
                             <div>
-                                <h3 className="text-base font-medium">Company</h3>
+                                <h3 className="text-base font-medium">Empresa</h3>
                                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                     {COMPANY_LINKS.map((link, index) => (
                                         <AnimationContainer
@@ -167,7 +165,7 @@ const Footer = () => {
                 <AnimationContainer animation="fadeUp" delay={1}>
                     <div className="mt-16 border-t border-border/40 py-8 flex flex-col md:flex-row items-center justify-center">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} Esencia Code. All rights reserved.
+                            © {new Date().getFullYear()} Esencia Code. Todos los derechos reservados.
                         </p>
                     </div>
                 </AnimationContainer>
