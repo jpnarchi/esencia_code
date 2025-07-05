@@ -60,21 +60,13 @@ const HowItWorks = () => {
                                     delay={0.9 + (index * 0.2)}
                                 >
                                     <div className="w-full h-52 flex items-center justify-center">
-                                        {index === 0 && (
-                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                            </svg>
-                                        )}
-                                        {index === 1 && (
-                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" style={{ animationDelay: '1s' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                            </svg>
-                                        )}
-                                        {index === 2 && (
-                                            <svg className="w-24 h-24 text-orange-500 animate-pulse" style={{ animationDelay: '2s' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                            </svg>
-                                        )}
+                                        <Image
+                                            src={`/images/paso${index + 1}.png`}
+                                            alt={item.title}
+                                            width={400}
+                                            height={208}
+                                            className="w-full h-full object-cover rounded-lg"
+                                        />
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer

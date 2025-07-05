@@ -8,12 +8,12 @@ export const generateMetadata = ({
         {
             rel: "apple-touch-icon",
             sizes: "32x32",
-            url: "/images/esencia-logo.png"
+            url: "/images/logo.png"
         },
         {
             rel: "icon",
             sizes: "32x32",
-            url: "/images/esencia-logo.png"
+            url: "/images/logo.png"
         },
     ],
     noIndex = false

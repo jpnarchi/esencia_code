@@ -88,7 +88,7 @@ const Navbar = () => {
 
                     <AnimationContainer animation="fadeLeft" delay={0.1}>
                         <div className="flex items-center gap-x-4">
-                            <Link href="/signup">
+                            <Link href="https://wa.me/+525561365494">
                                 <Button size="sm">
                                     Quiero agendar una videollamada
                                 </Button>
@@ -122,15 +122,15 @@ const Navbar = () => {
                     <div className="flex items-center justify-between gap-x-4 w-full">
                         <AnimationContainer animation="fadeRight" delay={0.1}>
                             <Link href="/">
-                                <Image src="/esencia-logo.png" alt="Esencia Logo" width={24} height={24} />
+                                <Image src="/images/esencia-logo.png" alt="Esencia Logo" width={104} height={104} />
                             </Link>
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeLeft" delay={0.1}>
                             <div className="flex items-center justify-center gap-x-4">
                                 <Button size="sm">
-                                    <Link href="/signup" className="flex items-center">
-                                        Get started
+                                    <Link href="https://wa.me/+525561365494" className="flex items-center">
+                                        ¡Empieza hoy!
                                     </Link>
                                 </Button>
                                 {open ? (
