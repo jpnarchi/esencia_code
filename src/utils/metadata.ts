@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const generateMetadata = ({
     title = `Esencia Code`,
     description = `Construye la página web de tus sueños hoy mismo`,
-    image = "images/banner.png",
+    image = "/images/banner.png",
     icons = [
         {
             rel: "apple-touch-icon",
@@ -30,11 +30,11 @@ export const generateMetadata = ({
     openGraph: {
         title,
         description,
-        url: 'https://esenciacode.mx',
+        url: 'https://esencia-code.vercel.app',
         siteName: 'Esencia Code',
         images: [
             {
-                url: `https://esenciacode.mx/${image}`,
+                url: 'https://esencia-code.vercel.app/images/banner.png',
                 width: 1200,
                 height: 630,
                 alt: 'Esencia Code - Desarrollo Web',
@@ -47,7 +47,7 @@ export const generateMetadata = ({
         card: 'summary_large_image',
         title,
         description,
-        images: [`https://esenciacode.mx/${image}`],
+        images: ['https://esencia-code.vercel.app/images/banner.png'],
         creator: '@esenciacode',
     },
     ...(noIndex && { robots: { index: false, follow: false } }),
