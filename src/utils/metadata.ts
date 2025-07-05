@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const generateMetadata = ({
     title = `Esencia Code`,
     description = `Construye la página web de tus sueños hoy mismo`,
-    image = "/images/banner.png",
+    image = "images/banner.png",
     icons = [
         {
             rel: "apple-touch-icon",
