@@ -30,8 +30,8 @@ const MarketingDigitalPage = () => {
           </BackgroundBeamsWithCollision>
         </div>
         <Wrapper className="flex items-center justify-center min-h-screen w-full h-full pt-32 relative z-10">
-          <div className="flex flex-col lg:flex-row w-full h-full lg:gap-24">
-            <div className="flex flex-col items-start gap-10 py-8 w-full lg:w-3/5">
+          <div className="flex flex-col lg:flex-row w-full h-full gap-0 lg:gap-16">
+            <div className="flex flex-col items-start gap-6 lg:gap-10 py-4 lg:py-8 w-full">
               <div className="flex flex-col items-start gap-4">
                 <AnimationContainer animation="fadeUp" delay={0.2}>
                   <SectionBadge title="Marketing Digital Profesional" />
@@ -69,11 +69,11 @@ const MarketingDigitalPage = () => {
             </div>
 
             <AnimationContainer animation="fadeRight" delay={0.4}>
-              <div className="flex flex-col items-start justify-start w-full h-min relative overflow-visible lg:w-2/5 lg:flex lg:justify-end">
-                <div className="lg:aspect-[1.3884514435695539/1] w-full relative">
+              <div className="flex flex-col items-start justify-start w-full h-min relative overflow-visible -mt-8 lg:mt-0">
+                <div className="lg:aspect-[1.3884514435695539/1] w-full lg:w-[500px] lg:h-[auto,720px] relative">
                   <div className="lg:absolute lg:inset-0">
                     <Image
-                      src="/images/dashboard.png"
+                      src="/images/burbujasredes.png"
                       alt="marketing digital"
                       sizes="1000px"
                       width={1024}
