@@ -32,7 +32,7 @@ export const generateMetadata = ({
         description: "Construye la página web de tus sueños hoy mismo",
         images: [
             {
-                url: "https://esencia-code.vercel.app/images/banner.png",
+                url: image || "/images/banner.png",
                 width: 1200,
                 height: 630,
                 alt: "Esencia Code - Desarrollo Web",
@@ -40,12 +40,14 @@ export const generateMetadata = ({
         ],
         locale: "es_MX",
         type: "website",
+        siteName: "Esencia Code",
     },
     twitter: {
         card: "summary_large_image",
         title: "Esencia Code",
         description: "Construye la página web de tus sueños hoy mismo",
-        images: ["https://esencia-code.vercel.app/images/banner.png"],
+        images: [image || "/images/banner.png"],
+        creator: "@esenciacode",
     },
     ...(noIndex && { robots: { index: false, follow: false } }),
 });

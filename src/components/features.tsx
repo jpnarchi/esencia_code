@@ -9,18 +9,18 @@ const Features = () => {
         <Wrapper className="py-20 lg:py-32">
             <div className="flex flex-col items-center text-center gap-4 mb-16">
                 <AnimationContainer animation="fadeUp" delay={0.2}>
-                    <SectionBadge title="Platform Features" />
+                    <SectionBadge title="Campañas Publicitarias" />
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
-                        Manage properties smarter
+                        Maximiza tu ROI con campañas inteligentes
                     </h2>
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Experience the future of real estate with our all-in-one platform for seamless property management.
+                        Llega a tu audiencia ideal con estrategias de publicidad digital que generan resultados medibles y crecimiento sostenible.
                     </p>
                 </AnimationContainer>
             </div>
@@ -33,10 +33,10 @@ const Features = () => {
                                 <AnimationContainer animation="fadeUp" delay={0.6}>
                                     <div className="space-y-4">
                                         <h3 className="text-xl md:text-2xl font-medium">
-                                            {FEATURES[0].title}
+                                            Google Ads & SEO
                                         </h3>
                                         <p className="text-sm md:text-base text-muted-foreground max-w-md">
-                                            {FEATURES[0].description}
+                                            Optimiza tu presencia en Google con campañas de búsqueda, display y shopping que conectan con usuarios en el momento exacto de la decisión de compra.
                                         </p>
                                     </div>
                                 </AnimationContainer>
@@ -44,7 +44,7 @@ const Features = () => {
                                     <div className="relative h-60">
                                         <Image
                                             src={FEATURES[0].image}
-                                            alt={FEATURES[0].title}
+                                            alt="Google Ads"
                                             fill
                                             className="object-contain"
                                         />
@@ -60,10 +60,10 @@ const Features = () => {
                                 <AnimationContainer animation="fadeUp" delay={0.7}>
                                     <div className="space-y-4">
                                         <h3 className="text-xl md:text-2xl font-medium">
-                                            {FEATURES[1].title}
+                                            TikTok Ads
                                         </h3>
                                         <p className="text-sm md:text-base text-muted-foreground max-w-md">
-                                            {FEATURES[1].description}
+                                            Conecta con la generación Z y Millennials a través de contenido creativo y viral que genera engagement auténtico y conversiones.
                                         </p>
                                     </div>
                                 </AnimationContainer>
@@ -71,7 +71,7 @@ const Features = () => {
                                     <div className="relative h-48">
                                         <Image
                                             src={FEATURES[1].image}
-                                            alt={FEATURES[1].title}
+                                            alt="TikTok Ads"
                                             fill
                                             className="object-contain"
                                         />
@@ -89,10 +89,10 @@ const Features = () => {
                                 <AnimationContainer animation="fadeUp" delay={0.8}>
                                     <div className="space-y-4">
                                         <h3 className="text-xl md:text-2xl font-medium">
-                                            {FEATURES[2].title}
+                                            Meta Ads
                                         </h3>
                                         <p className="text-sm md:text-base text-muted-foreground max-w-md">
-                                            {FEATURES[2].description}
+                                            Llega a millones de usuarios en Facebook e Instagram con campañas personalizadas que aprovechan el poder del targeting avanzado.
                                         </p>
                                     </div>
                                 </AnimationContainer>
@@ -100,7 +100,7 @@ const Features = () => {
                                     <div className="relative h-48">
                                         <Image
                                             src={FEATURES[2].image}
-                                            alt={FEATURES[2].title}
+                                            alt="Meta Ads"
                                             fill
                                             className="object-contain"
                                         />
@@ -116,10 +116,10 @@ const Features = () => {
                                 <AnimationContainer animation="fadeUp" delay={0.9}>
                                     <div className="space-y-4">
                                         <h3 className="text-xl md:text-2xl font-medium">
-                                            {FEATURES[3].title}
+                                            Análisis & Optimización
                                         </h3>
                                         <p className="text-sm md:text-base text-muted-foreground max-w-md">
-                                            {FEATURES[3].description}
+                                            Monitorea el rendimiento en tiempo real y optimiza continuamente tus campañas para maximizar el retorno de inversión y alcanzar tus objetivos.
                                         </p>
                                     </div>
                                 </AnimationContainer>
@@ -127,7 +127,7 @@ const Features = () => {
                                     <div className="relative h-48">
                                         <Image
                                             src={FEATURES[3].image}
-                                            alt={FEATURES[3].title}
+                                            alt="Analytics"
                                             fill
                                             className="object-contain"
                                         />

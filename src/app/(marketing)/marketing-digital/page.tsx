@@ -9,7 +9,9 @@ import Link from "next/link";
 import Wrapper from "@/components/global/wrapper";
 import Image from "next/image";
 import Marquee from "@/components/ui/marquee";
+import Perks from "@/components/perks";
 import Images from "@/components/global/images";
+import Features from "@/components/features";
 
 const MarketingDigitalPage = () => {
   const companies = [
@@ -97,34 +99,13 @@ const MarketingDigitalPage = () => {
         </Wrapper>
       </section>
 
+        <section className="w-full">
+            <Features />
+        </section>
       {/* Aquí puedes agregar más secciones para el contenido de marketing digital */}
-      <section className="w-full py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Nuestros Servicios de Marketing Digital
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 border rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">SEO & SEM</h3>
-              <p className="text-muted-foreground">
-                Optimización para motores de búsqueda y publicidad pagada
-              </p>
-            </div>
-            <div className="p-6 border rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Redes Sociales</h3>
-              <p className="text-muted-foreground">
-                Gestión y estrategias para redes sociales
-              </p>
-            </div>
-            <div className="p-6 border rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Email Marketing</h3>
-              <p className="text-muted-foreground">
-                Campañas de email marketing efectivas
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="w-full">
+        <Perks />
+    </section>
     </div>
   );
 };
