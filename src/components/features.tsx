@@ -97,7 +97,7 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.9}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-32">
                                         <Image
                                             src={FEATURES[2].image}
                                             alt="Meta Ads"
