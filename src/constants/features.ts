@@ -20,7 +20,7 @@ export const FEATURES = [
     {
         title: "Instant property valuation",
         description: "Get real-time market valuations powered by AI and big data for informed pricing decisions.",
-        image: "/images/f4.svg",
+        image: "/images/esencia-logo.png",
         size: "small"
     },
 ];

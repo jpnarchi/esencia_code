@@ -12,6 +12,12 @@ import Marquee from "@/components/ui/marquee";
 import Perks from "@/components/perks";
 import Images from "@/components/global/images";
 import Features from "@/components/features";
+import CTA from "@/components/cta-marketing";
+import { GlobeDemo } from "@/components/word";
+
+import React from "react";
+import { motion } from "motion/react";
+import dynamic from "next/dynamic";
 
 const MarketingDigitalClient = () => {
   const companies = [
@@ -98,13 +104,18 @@ const MarketingDigitalClient = () => {
           </AnimationContainer>
         </Wrapper>
       </section>
-
+      <section className="w-full">
+        <GlobeDemo />
+      </section>
       <section className="w-full">
         <Features />
       </section>
       {/* Aquí puedes agregar más secciones para el contenido de marketing digital */}
-      <section className="w-full">
+      {/* <section className="w-full">
         <Perks />
+      </section> */}
+      <section className="w-full">
+        <CTA />
       </section>
     </div>
   );
