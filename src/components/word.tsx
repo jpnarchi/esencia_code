@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import dynamic from "next/dynamic";
 import Wrapper from "./global/wrapper";
 import AnimationContainer from "./global/animation-container";
+import { Button } from "@/components/ui/button";
 
 const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
   ssr: false,
@@ -397,27 +398,37 @@ export function GlobeDemo() {
   ];
 
   return (
-    <Wrapper className="flex items-center justify-center min-h-screen w-full h-full pt-16 mb-8">
-      <div className="flex flex-col w-full h-full">
-        <div className="flex flex-col items-center gap-10 py-8 w-full mb-4">
-          <div className="flex flex-col items-center gap-2 text-center">
+    <Wrapper className="flex items-center justify-center min-h-screen w-full h-full pt-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full h-full lg:gap-16 lg:min-h-[60vh]">
+        <div className="flex flex-col items-start gap-10 py-8 w-full">
+          <div className="flex flex-col items-start gap-4">
             <AnimationContainer animation="fadeUp" delay={0.4}>
-              <h2 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
+              <h2 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500 pt-10">
                 El Mundo te conocerá
               </h2>
             </AnimationContainer>
 
             <AnimationContainer animation="fadeUp" delay={0.6}>
-              <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl">
+              <p className="text-sm md:text-base lg:text-lg text-muted-foreground">
                 Exponenciaremos tus ventas en tu negocio, con la tecnología más avanzada de latinoamérica.
               </p>
             </AnimationContainer>
           </div>
+
+          <AnimationContainer animation="fadeUp" delay={0.8}>
+            <div className="flex justify-start w-full">
+              <a href="https://wa.me/+525561365494?text=¡Hola! Quisiera agendar una videollamada para potenciar mi empresa." target="_blank" rel="noopener noreferrer">
+                <Button size="md" className="w-full md:w-auto">
+                    Quiero agendar una videollamada
+                </Button>
+              </a>
+            </div>
+          </AnimationContainer>
         </div>
 
-        <AnimationContainer animation="fadeUp" delay={0.8}>
-          <div className="flex flex-col items-center justify-center w-full h-min relative overflow-visible -mt-16">
-            <div className="relative w-full h-[40rem]">
+        <AnimationContainer animation="fadeRight" delay={0.4}>
+          <div className="flex flex-col items-center justify-center w-full h-full relative overflow-visible">
+            <div className="relative w-full h-full max-h-[50vh] lg:max-h-[90rem] min-h-[300px] lg:min-h-[500px]">
               <World data={sampleArcs} globeConfig={globeConfig} />
             </div>
           </div>

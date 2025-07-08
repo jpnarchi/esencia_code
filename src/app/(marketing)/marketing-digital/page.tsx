@@ -1,26 +1,65 @@
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import { Cover } from "@/components/ui/cover";
-import AnimationContainer from "@/components/global/animation-container";
-import SectionBadge from "@/components/ui/section-badge";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Wrapper from "@/components/global/wrapper";
-import Image from "next/image";
-import Marquee from "@/components/ui/marquee";
-import Perks from "@/components/perks";
-import Images from "@/components/global/images";
+import CTA from "@/components/cta";
+import FAQ from "@/components/faq";
 import Features from "@/components/features";
+import Hero from "@/components/hero";
+import HowItWorks from "@/components/how-it-works";
+import Perks from "@/components/perks";
+import PlatformMetrics from "@/components/platform-metrics";
+import Pricing from "@/components/pricing";
+import Testimonials from "@/components/testimonials";
+import { MacbookScrollDemo } from "@/components/mackbook-scroll";
 import { generateMetadata } from "@/utils";
-import MarketingDigitalClient from "./marketing-digital-client";
 
 export const metadata = generateMetadata({
-  title: "Marketing Digital - Esencia Code",
-  description: "Marketing inteligente y optimizado para crecer. Estrategias de marketing digital que generan resultados medibles.",
+  title: "Desarrollo Digital - Esencia Code",
+  description: "Creamos el futuro de tu empresa con soluciones web y móviles innovadoras que transforman tu negocio.",
   image: "/images/banner.png"
 });
 
-const MarketingDigitalPage = () => {
-  return <MarketingDigitalClient />;
+const DesarrolloDigitalPage = () => {
+    return (
+        <div className="w-full relative flex flex-col">
+            <section className="w-full">
+                <Hero />
+            </section>
+
+            <section className="w-full">
+                <MacbookScrollDemo />
+            </section>
+
+            {/* <section className="w-full">
+                <Perks />
+            </section> */}
+
+            <section className="w-full">
+                <HowItWorks />
+            </section>
+
+            {/* <section className="w-full">
+                <Features />
+            </section> */}
+
+            {/* <section className="w-full">
+                <Testimonials />
+            </section> */}
+
+            {/* <section className="w-full">
+                <Pricing />
+            </section> */}
+
+            <section className="w-full">
+                <PlatformMetrics />
+            </section>
+
+            <section className="w-full">
+                <FAQ />
+            </section>
+
+            <section className="w-full">
+                <CTA />
+            </section>
+        </div>
+    );
 };
 
-export default MarketingDigitalPage; 
+export default DesarrolloDigitalPage; 

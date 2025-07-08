@@ -124,7 +124,7 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={1}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-32">
                                         <Image
                                             src={FEATURES[3].image}
                                             alt="Analytics"
