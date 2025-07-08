@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function MarketingLayout({
     children,
@@ -11,6 +12,7 @@ export default function MarketingLayout({
             <Navbar />
             {children}
             <Footer />
+            <WhatsAppButton />
         </main>
     );
 };

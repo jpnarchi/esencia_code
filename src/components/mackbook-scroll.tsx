@@ -40,9 +40,9 @@ export function MacbookScrollDemo() {
               >
                 Quiero mi página web
               </Button>
-              <Button variant="outline" size="md" className="w-full md:w-auto">
+              {/* <Button variant="outline" size="md" className="w-full md:w-auto">
                 Ver portafolio
-              </Button>
+              </Button> */}
             </div>
           </AnimationContainer>
         </div>
