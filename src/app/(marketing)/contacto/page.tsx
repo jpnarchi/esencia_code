@@ -108,7 +108,7 @@ const ContactPage = () => {
                 {/* Columna del formulario */}
                 <AnimationContainer animation="fadeRight" delay={0.4} className="w-full lg:w-1/2">
                     <div className="flex flex-col items-start justify-start w-full h-full relative">
-                        <div className="w-full h-full flex items-center">
+                        <div className="w-full h-full flex items-center pb-8 lg:pb-0">
                             <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-none min-w-0">
                                 {/* Nombre completo - ancho completo */}
                                 <div className="flex flex-col gap-2 w-full">

@@ -174,17 +174,6 @@ const Navbar = () => {
                                     </Link>
                                 </AnimationContainer>
                             ))}
-                            <AnimationContainer animation="fadeUp" delay={0.5} className="w-full">
-                                <Link href="/signin" className="w-full">
-                                    <Button
-                                        onClick={() => setOpen(false)}
-                                        variant="outline"
-                                        className="block md:hidden w-full"
-                                    >
-                                        Sign In
-                                    </Button>
-                                </Link>
-                            </AnimationContainer>
                         </motion.div>
                     )}
                 </AnimatePresence>
