@@ -36,7 +36,7 @@ export function MacbookScrollDemo() {
               <Button 
                 size="md" 
                 className="w-full md:w-auto"
-                onClick={() => window.open("https://wa.me/+525561365494", "_blank")}
+                onClick={() => window.open("https://wa.me/+525539582942", "_blank")}
               >
                 Quiero mi página web
               </Button>

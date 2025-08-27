@@ -36,7 +36,7 @@ const PlatformMetrics = () => {
                         <Button 
                         className="mt-4"
                         size="md" 
-                        onClick={() => window.open("https://wa.me/+525561365494", "_blank")}
+                        onClick={() => window.open("https://wa.me/+525539582942", "_blank")}
                         >
                         Quiero mi página web
                         

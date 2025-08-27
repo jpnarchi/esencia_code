@@ -417,7 +417,7 @@ export function GlobeDemo() {
 
           <AnimationContainer animation="fadeUp" delay={0.8}>
             <div className="flex justify-start w-full">
-              <a href="https://wa.me/+525561365494?text=¡Hola! Quisiera agendar una videollamada para potenciar mi empresa." target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+525539582942?text=¡Hola! Quisiera agendar una videollamada para potenciar mi empresa." target="_blank" rel="noopener noreferrer">
                 <Button size="md" className="w-full md:w-auto">
                     Quiero agendar una videollamada
                 </Button>

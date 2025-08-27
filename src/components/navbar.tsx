@@ -88,7 +88,7 @@ const Navbar = () => {
 
                     <AnimationContainer animation="fadeLeft" delay={0.1}>
                         <div className="flex items-center gap-x-4">
-                            <Link href="https://wa.me/+525561365494">
+                            <Link href="https://wa.me/+525539582942">
                                 <Button size="sm">
                                     Quiero agendar una videollamada
                                 </Button>
@@ -129,7 +129,7 @@ const Navbar = () => {
                         <AnimationContainer animation="fadeLeft" delay={0.1}>
                             <div className="flex items-center justify-center gap-x-4">
                                 <Button size="sm">
-                                    <Link href="https://wa.me/+525561365494" className="flex items-center">
+                                    <Link href="https://wa.me/+525539582942" className="flex items-center">
                                         ¡Empieza hoy!
                                     </Link>
                                 </Button>

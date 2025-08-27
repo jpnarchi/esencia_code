@@ -93,7 +93,7 @@ const CTA = () => {
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={1}>
-                        <a href="https://wa.me/+525561365494" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/+525539582942" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="mt-6">
                                 Contactar por WhatsApp
                                 <ArrowRightIcon className="size-4 ml-2" />

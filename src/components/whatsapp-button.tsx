@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
-    const phoneNumber = "+525561365494"; // Número de teléfono de México
+    const phoneNumber = "+525539582942"; // Número de teléfono de México
     const message = "Hola! Me gustaría obtener más información sobre sus servicios."; // Mensaje predefinido
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
